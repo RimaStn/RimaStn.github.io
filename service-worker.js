@@ -29,7 +29,7 @@ if (workbox){
             { url: '/assets/icons/maskable_icon512.png', revision: '1' },
             { url: '/assets/icons/icon72.png', revision: '1' },
             { url: '/assets/img/headerhome3.jpeg', revision: '1' },
-            { url: '/manifest.json', revision: '1' },
+            { url: '/manifest.json', revision: '2' },
             {  
               url: 
                 "https://fonts.gstatic.com/s/materialicons/v55/flUhRq6tzZclQEJ-Vdg-IuiaDsNc.woff2",
@@ -101,6 +101,13 @@ if (workbox){
                     maxAgeSeconds: 30 * 24 * 60 * 60,
                 }),
             ]
+        })
+    );
+
+    workbox.routing.registerRoute(
+        /\.(?:js|css)$/,
+        workbox.strategies.staleWhileRevalidate ({
+            cacheName: "static-resources",
         })
     );
 

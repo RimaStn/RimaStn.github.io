@@ -1,7 +1,7 @@
 {
     "name": "Football Area",
     "short_name": "Football",
-    "description": "Aplikasi PWA ke-2 saya",
+    "description": "Aplikasi PWA ke-3 saya",
     "start_url": "/index.html",
     "display": "standalone",
     "background_color": "#424242",
