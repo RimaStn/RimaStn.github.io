@@ -147,9 +147,9 @@ function showMatch(data) {
                 <tr>
                     <td>${match.matchday}</td>
                     <td>${match.utcDate}</td>
-                    <td><img class="responsive-img" width="20px" style="margin-right:5px" align="center" src="https://crests.football-data.org/${match.homeTeam.id}.svg"
+                    <td><img class="responsive-img" width="20px" style="margin-right:5px" align="center" alt="" src="https://crests.football-data.org/${match.homeTeam.id}.svg"
                     }">${match.homeTeam.name}</td>
-                    <td><img class="responsive-img" width="20px" style="margin-right:5px" align="center" src="https://crests.football-data.org/${match.awayTeam.id}.svg"
+                    <td><img class="responsive-img" width="20px" style="margin-right:5px" align="center" alt="" src="https://crests.football-data.org/${match.awayTeam.id}.svg"
                     }">${match.awayTeam.name}</td>
                     <td>${match.score.fullTime.homeTeam == null ? "-" : match.score.fullTime.homeTeam} 
                     : ${match.score.fullTime.awayTeam == null ? "-" : match.score.fullTime.awayTeam}
