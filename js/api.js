@@ -248,7 +248,7 @@ function resultTeamFav(data) {
             </div>
         `;
     });
-    if(data.length == 0) dataTeamFavHtml += '<h6 class="center-align">Tidak ada Tim favorit!</6>'
+    if(data.length == 0) dataTeamFavHtml += '<h6 class="center-align">Tidak ada Tim favorit!</h6>'
 
     // Sisipkan komponen card ke dalam elemen dengan id divFavorit
     document.getElementById("IsiFavorit").innerHTML = dataTeamFavHtml;
